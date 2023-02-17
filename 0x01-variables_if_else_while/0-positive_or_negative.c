@@ -7,7 +7,7 @@
   * main - Entry point
   * Parameters: rand(), RAND_MAX
   *
-  * Description: Determine positive numbers from random selection
+  * Description: :Determine positive numbers from random selection
   * Return: 0 after completion
   */
 
