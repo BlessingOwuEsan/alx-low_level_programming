@@ -7,26 +7,27 @@
  * Return: Always 0 (success)
  *\
 
- int main(void)
+int main(void)
+
 {
  /* loop through a two digit mumbers*/
 
-int x, y;
+int a, b;
 
 /* loop throgh the first digit */
 
-for (x = 0 ; x <= 8 ; x++)
+for (a = 0 ; a <= 8 ; a++)
 {
 	/* loop throuh the second digit */
 
-	for (y = x + 1 ; y <= 9 ; y++)
+	for (b = a + 1 ; b <= 9 ; b++)
 	{
-		putchar((x % 10) + '0');
-		putchar((y % 10) + '0');
+		putchar((a % 10) + '0');
+		putchar((b % 10) + '0');
 
 		/* continue adding comma and space */
 
-		if (x == 8 && y == 9)
+		if (a == 8 && b == 9)
 			continue;
 		putchar(',');
 		putchar(' ');
