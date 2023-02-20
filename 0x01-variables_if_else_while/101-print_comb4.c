@@ -1,4 +1,4 @@
-#include <stdio.h
+#include <stdio.h>
 
 /**
  * main - Entry program point
@@ -12,7 +12,7 @@ int main(void)
 
 	int x, y, z;
 
-	/*loop the first digit */
+	/*loop the first digi */
 
 	for (x = 0 ; x <= 7 ; x++)
 	{
@@ -20,14 +20,20 @@ int main(void)
 		for (y = x + 1 ; y <= 8 ; y++)
 		{
 			/* loop the third digit */
+
 			for (z = y + 1 ; z <= 9 ; z++)
 			{
 				putchar((x % 10) + '0');
 				putchar((y % 10) + '0');
 				putchar((z % 10) + '0');
-		/* continue adding comma, and space */
-		if (x == 7 && y == 8 && z == 9)
-			continue;
-		putchar(',');
-		putchar(' ');
-					}
+
+			/* continue adding comma, and space */
+				if (x == 7 && y == 8 && z == 9)
+					continue;
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
