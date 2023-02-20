@@ -1,38 +1,37 @@
-#include <stdio.h>
+include < stdio.h >
 #include <ctype.h>
 
 /**
  * main - Entry point of the program
  *
  * Return: Always 0 (success)
- *\
+ */
 
 int main(void)
-
 {
- /* loop through a two digit mumbers*/
+	/* loop through a two digit mumbers*/
 
-int a, b;
+	int x, y;
 
-/* loop throgh the first digit */
+	/* loop throgh the first digit */
 
-for (a = 0 ; a <= 8 ; a++)
-{
-	/* loop throuh the second digit */
-
-	for (b = a + 1 ; b <= 9 ; b++)
+	for (x = 0 ; x <= 8 ; x++)
 	{
-		putchar((a % 10) + '0');
-		putchar((b % 10) + '0');
+		/* loop throuh the second digit */
 
-		/* continue adding comma and space */
+		for (y = x + 1 ; y <= 9 ; y++)
+		{
+			putchar((x % 10) + '0');
+			putchar((y % 10) + '0');
 
-		if (a == 8 && b == 9)
-			continue;
-		putchar(',');
-		putchar(' ');
+			/* continue adding comma and space */
+
+			if (x == 8 && y == 9)
+				continue;
+			putchar(',');
+			putchar(' ');
+		}
 	}
-}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
