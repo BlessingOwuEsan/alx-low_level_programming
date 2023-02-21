@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - Entry program point
- *
- * Return: Always 0 (success)
- */
+*main - Entry program point
+*
+* Return: Always 0 (succes
+*/
 
 int main(void)
 {
