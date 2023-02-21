@@ -24,7 +24,7 @@ _putchar(' ');
 }
 if ((mul < 10) && (j != 0))
 {
-_ putchar(' ');
+_putchar(' ');
 _putchar((mul % 10) + '0');
 }
 else if (mul >= 10)
