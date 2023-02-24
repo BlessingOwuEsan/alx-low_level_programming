@@ -24,7 +24,7 @@ else if (number % 3 == 0)
 printf("Fizz");
 }
 else
-}
+{
 printf("%d", number);
 }
 if (number != 100)
@@ -33,4 +33,5 @@ printf(" ");
 }
 printf("\n");
 return (0);
+
 }
